@@ -3,11 +3,7 @@ import { Sylvester } from './sylvester';
 import { Vector } from './vector';
 
 const lapack = (() => {
-  try {
-    return require('lapack');
-  } catch (err) {
-    return null;
-  }
+  return null;
 })();
 
 function sign(x) {
